@@ -1,0 +1,139 @@
+.header{
+  background-color: #f55105; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 100;  
+  width: 100%;
+}
+
+.custom-big-button {
+  width: 100%; 
+  height: 10%; 
+  padding: 10px; 
+  background-color: #f55105;
+  color: #FFFEFA;
+  border-radius: 0;
+  border: none; 
+  margin-bottom: 30px; 
+  font-family: 'Oswald', sans-serif;
+  font-size: 80px; 
+  line-height: 20px; 
+}
+
+.add-tour {
+  border-bottom: 2px solid #f55105;
+  border-right: 2px solid #f55105;
+}
+
+.add-tour:focus {
+  border: none;
+}
+
+.custom-button {
+  width: 10%; 
+  height: 10%; 
+  padding: 10px; 
+  background-color: #f55105;
+  color: #FFFEFA;
+  border-radius: 0;
+  border: none; 
+  margin-left: 88%;
+  margin-bottom: 30px; 
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px; 
+  line-height: 20px; 
+}
+
+.custom-white-button {
+  width: 27%; 
+  height: 12%; 
+  padding: 10px; 
+  background-color: #FFFEFA;
+  color: #f55105;
+  border-radius: 0;
+  border: none; 
+  margin-left: 70%;
+  margin-bottom: 8%; 
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px; 
+  line-height: 20px; 
+}
+.custom-button:hover {
+  background-color: #f55105
+  ; 
+  color: #FFFEFA;
+}
+
+.navbar-nav { 
+  margin-left: auto; 
+} 
+
+.btn-bd-or {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+  }
+
+  .oswald-font {
+    font-family: Oswald, sans-serif;
+}
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Oswald, sans-serif;
+}
+
+  .raleway-font {
+  font-family: Raleway, sans-serif;
+}
+
+  p {
+    font-family: Raleway, sans-serif;
+  }
+
+.accordion-button:focus {
+  box-shadow: none; 
+  outline: none; 
+}
+
+
+
+.blurred-image {
+  width: 100%;
+  height: 600px;
+
+}
+
+.gradient-custom-5 {
+  /* fallback for old browsers */
+  background: #ff6b01;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(255, 179, 0, 0.5), rgba(255, 68, 0, 0.5));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(255, 162, 0, 0.793), rgba(255, 132, 0, 0.5))
+  }
+  .gradient-custom-4 {
+  /* fallback for old browsers */
+  background: #ff6e14;
+  
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgb(255, 89, 0), rgb(255, 178, 53));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgb(255, 106, 0), rgb(232, 155, 0))
+  }
+
+  .tour-img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тури</title>
+    <link rel="icon" type="image/x-icon" href="travells-favicon-color (1).png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+    img{
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+<header style="background-color: #FF9B50; position: fixed; z-index: 100;  width: 100%;">
+  <nav class="navbar navbar-expand-lg oswald-font">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="mainpage.html"  style="color: #FFFEFA;"><img src="travells-favicon-color.png" alt="Турагенство" style="width: 50px; height: 50px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="mainpage.html"  style="color: #FFFEFA">Головна</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" style="color: #fffefa92;">Тури</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #FFFEFA">Відгуки</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">
+                <img src="person.svg" alt="Особистий кабінет">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+<br>
+<div class="col-md-6 offset-md-2" style="margin-top: 100px; margin-bottom: 20px;">
+    <h1 style="font-size: 92px;"><b>КАТАЛОГ ТОВАРІВ</b></h1>
+</div>
+<div class="container">
+  <div class="row">
+      <div class="col-2"> 
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Пошук...">
+          <div class="input-group-append">
+              <button class="btn" type="button" style="background-color: #FF9B50; color: #FFFEFA">Пошук</button>
+          </div>
+      </div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#continentCollapse" aria-expanded="false" aria-controls="continentCollapse">
+              Регіони
+            </button>
+          </h2>
+          <div id="continentCollapse" class="accordion-collapse collapse">
+            <div class="accordion-body raleway-font">
+              <label for="continents">Оберіть регіон:</label>
+              <select id="continents" name="continents" multiple>
+                <option value="europe">Європа</option>
+                <option value="asia">Азія</option>
+                <option value="america">Америка</option>
+                <option value="africa">Африка</option>
+                <option value="oceania">Океанія</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#classCollapse" aria-expanded="false" aria-controls="classCollapse">
+              Клас
+            </button>
+          </h2>
+          <div id="classCollapse" class="accordion-collapse collapse">
+            <div class="accordion-body raleway-font">
+              <label for="class">Оберіть клас:</label>
+              <select id="class" name="class">
+                <option value="S++">S++</option>
+                <option value="S+">S+</option>
+                <option value="S">S</option>
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ratingCollapse" aria-expanded="false" aria-controls="ratingCollapse">
+              Рейтинг
+            </button>
+          </h2>
+          <div id="ratingCollapse" class="accordion-collapse collapse">
+            <div class="accordion-body raleway-font">
+              <label>Оберіть рейтинг:</label><br>
+              <input type="checkbox" id="rating5" name="rating[]" value="5">
+              <label for="rating5">5</label>
+              <input type="checkbox" id="rating4" name="rating[]" value="4">
+              <label for="rating4">4</label>
+              <input type="checkbox" id="rating3" name="rating[]" value="3">
+              <label for="rating3">3</label>
+              <input type="checkbox" id="rating2" name="rating[]" value="2">
+              <label for="rating2">2</label>
+              <input type="checkbox" id="rating1" name="rating[]" value="1">
+              <label for="rating1">1</label>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#placesCollapse" aria-expanded="false" aria-controls="seatsCollapse">
+              Кількість місць
+            </button>
+          </h2>
+          <div id="placesCollapse" class="accordion-collapse collapse">
+            <div class="accordion-body raleway-font">
+              <label for="places">Оберіть кількість місць:</label>
+              <input type="range" id="places" name="places" min="10" max="200">
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#otherCollapse" aria-expanded="false" aria-controls="otherCollapse">
+              Інше
+            </button>
+          </h2>
+          <div id="otherCollapse" class="accordion-collapse collapse">
+            <div class="accordion-body raleway-font">
+              <div>
+                <label for="freeInternet">Безкоштовний інтернет:</label>
+                <input type="checkbox" id="freeInternet" name="freeInternet" value="freeInternet">
+              </div>
+              <div>
+                <label for="pets">Приймаються тварини:</label>
+                <input type="checkbox" id="pets" name="pets" value="pets">
+              </div>
+              <div>
+                <label for="children">Придатний для дітей:</label>
+                <input type="checkbox" id="children" name="children" value="children">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      </div>
+      <div class="col-10"> 
+          <div class="card border border-secondary mb-3">
+              <div class="card-body">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <img src="tour1.jpg" alt="Тур1" class="img-fluid">
+                      </div>
+                      <div class="col-md-6">
+                          <h3 class="card-text">Jungle Haven Adventure</h3>
+                          <p>Клас: A+<br>Коста-Ріка, Лімон<br>Кількість мість: 88</p>
+                      </div>
+                  </div>
+                  <div>
+                    <img src="nowifi.svg" alt="nowifi" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Відсутній інтернет">
+                    <img src="adventure.svg" alt="adventure" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Пригодницький тур">
+                    <img src="beach.svg" alt="beach" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Пляжний відпочинок">
+                  </div>
+              </div>
+              <button class="btn custom-button">Замовити</button>
+          </div>
+          <div class="card border border-secondary mb-3">
+              <div class="card-body">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <img src="tour2.jpg" alt="Тур2" class="img-fluid">
+                      </div>
+                      <div class="col-md-6">
+                          <h3 class="card-text">California Dream Shore Escape</h3>
+                          <p>Клас: S+<br>США, Лагуна-Біч<br>Кількість мість: 104</p>
+                      </div>
+                  </div>
+                  <div>
+                    <img src="wifi.svg" alt="wifi" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Безкоштовний інтернет">
+                    <img src="award.svg" alt="allin" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Все включено">
+                    <img src="beach.svg" alt="beach" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Пляжний відпочинок">
+                  </div>
+              </div>
+              <button class="btn custom-button">Замовити</button>
+          </div>
+          <div class="card border border-secondary mb-3">
+              <div class="card-body">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <img src="tour3.jpg" alt="Тур3" class="img-fluid">
+                      </div>
+                      <div class="col-md-6">
+                          <h3 class="card-text">Alpine Bliss Ski Retreat</h3>
+                          <p>Клас: A<br>Швейцарія, Санкт-Моріц<br>Кількість мість: 72</p>
+                      </div>
+                  </div>
+                  <div>
+                    <img src="wifi.svg" alt="wifi" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Безкоштовний інтернет">
+                    <img src="paw.svg" alt="paw" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Відпочинок з тваринами">
+                    <img src="ski.svg" alt="ski" class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Гірськолижний відпочинок">
+                  </div>
+              </div>
+              <button class="btn custom-button">Замовити</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<footer  class="text-white text-center" style="padding: 20px 0; background-color: #FF9B50;">
+      <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <p>Про компанію</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <p>Наші партнери</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <p>Працевлаштування</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p style="font-size: 14px;">Copyright © Всі права захищені</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html>
